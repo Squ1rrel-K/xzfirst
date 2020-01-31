@@ -13,3 +13,4 @@
 
 Route::get('/', 'StaticPagesController@home');
 
+

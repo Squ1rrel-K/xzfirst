@@ -4,10 +4,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
+                    <a class="nav-link " href="#"><span id="nav-linker">资讯</span></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link " href="#"><span id="nav-linker">产品</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="#"><span id="nav-linker">公司</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#"><span id="nav-linker">联系</span></a>
                 </li>
             </ul>
 
