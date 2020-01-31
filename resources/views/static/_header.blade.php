@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light bg-light">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark" style="margin-bottom: 10px">
     <div class="container">
         <a class="navbar-brand" href="/" style="font-weight: 600">菲斯特</a>
         <div class="collapse navbar-collapse" id="navbarNav">
