@@ -13,7 +13,7 @@
                     <a class="nav-link " href="#"><span id="nav-linker">公司</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#"><span id="nav-linker">联系</span></a>
+                    <a class="nav-link " href="{{route('contact')}}"><span id="nav-linker">联系</span></a>
                 </li>
             </ul>
 

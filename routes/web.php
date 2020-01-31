@@ -12,5 +12,6 @@
 */
 
 Route::get('/', 'StaticPagesController@home');
+Route::view('/contact', 'static.contact')->name('contact');
 
 

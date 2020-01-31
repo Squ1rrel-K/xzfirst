@@ -1,4 +1,4 @@
-<div class="bg-light fixed">
+<div class="bg-light" style="margin-top: 10px">
     <div class="container">
         <div class="col-md-12">
             <p>公司信息</p>
