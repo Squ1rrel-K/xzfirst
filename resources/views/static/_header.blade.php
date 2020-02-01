@@ -3,15 +3,11 @@
         <a class="navbar-brand" href="/" style="font-weight: 600">菲斯特</a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
+
                 <li class="nav-item">
-                    <a class="nav-link " href="#"><span id="nav-linker">资讯</span></a>
+                    <a class="nav-link " href="{{route('products')}}"><span id="nav-linker">产品</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#"><span id="nav-linker">产品</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="#"><span id="nav-linker">公司</span></a>
-                </li>
+
                 <li class="nav-item">
                     <a class="nav-link " href="{{route('contact')}}"><span id="nav-linker">联系</span></a>
                 </li>

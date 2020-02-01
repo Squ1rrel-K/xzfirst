@@ -13,5 +13,7 @@
 
 Route::get('/', 'StaticPagesController@home');
 Route::view('/contact', 'static.contact')->name('contact');
+Route::view('/products', 'static.products')->name('products');
+
 
 

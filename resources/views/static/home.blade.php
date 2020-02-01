@@ -92,7 +92,7 @@
 
             </div>
         </div>
-        <div class="row" style="margin-bottom: 15px">
+        <div class="row" style="margin-bottom: 50px">
             <div class="col-md-3" style="padding: 0 10px 0 10px">
                 <div style="background-color: #f9f9f9">
                     <a href="#">
