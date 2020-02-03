@@ -6,21 +6,28 @@
             <div class="container text-center">
                 <h1 class="display-3" style="font-weight: bold">徐州菲斯特</h1>
                 <p class="lead">我们专注于新能源、电力仪器仪表以及物联网系列产品等研发生产</p>
-                <hr class="my-4">
-                <p style="font-weight: bold">公司目前与中国矿大以及徐州工程学院的学者教授有着良好的合作关系，徐州菲斯特期待您的关注和加入！</p>
                 <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#">了解更多</a>
+                    <a class="btn btn-primary" href="#">了解更多</a>
                 </p>
             </div>
         </div>
         {{--jum e--}}
 
         {{--Carousel s--}}
-        <div class="container" style="padding-top: 35px">
+        <div class="container" >
             <h5><span class="h5-span">最新产品</span></h5>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top: 15px">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <img src="{{URL::asset('images/item.jpg')}}" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
                         <img src="{{URL::asset('images/item.jpg')}}" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
