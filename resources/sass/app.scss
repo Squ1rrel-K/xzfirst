@@ -6,23 +6,32 @@
 }
 
 html, body {
+    font-family: "Microsoft YaHei", "微软雅黑", "宋体", "Arial", serif;
     width: 100%;
     height: 100%;
 }
 
 // Header
-.nav-linker{
+.nav-linker {
     padding-right: 20px;
 }
+
 #nav-linker {
     font-weight: 700;
 
 }
 
 // Home
-.jumbotron-image{
+.jumbotron-image {
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+// Company
+.h5-span {
+    border-bottom: 3px #b81c22 solid;
+    font-weight: bold;
+    padding-bottom: 15px;
 }
 
 

@@ -11363,6 +11363,7 @@ a.text-dark:focus {
 
 html,
 body {
+  font-family: "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", "Arial", serif;
   width: 100%;
   height: 100%;
 }
@@ -11378,5 +11379,11 @@ body {
 .jumbotron-image {
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.h5-span {
+  border-bottom: 3px #b81c22 solid;
+  font-weight: bold;
+  padding-bottom: 15px;
 }
 

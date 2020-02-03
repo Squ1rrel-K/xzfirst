@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item nav-linker">
-                    <a class="nav-link" href="#"><span id="nav-linker">公司简介</span></a>
+                    <a class="nav-link" href="{{route('company')}}"><span id="nav-linker">公司简介</span></a>
                 </li>
 
                 <li class="nav-item nav-linker">
