@@ -11356,10 +11356,6 @@ a.text-dark:focus {
   }
 }
 
-#nav-linker {
-  font-weight: 700;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -11369,5 +11365,18 @@ html,
 body {
   width: 100%;
   height: 100%;
+}
+
+.nav-linker {
+  padding-right: 20px;
+}
+
+#nav-linker {
+  font-weight: 700;
+}
+
+.jumbotron-image {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
