@@ -23,11 +23,11 @@
                                     <span class="footer-nav-linker">产品信息</span>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <a class="dropdown-item" href="#">电力仪器</a>
-                                    <a class="dropdown-item" href="#">电动汽车转换器</a>
-                                    <a class="dropdown-item" href="#">足浴桶控制器</a>
-                                    <a class="dropdown-item" href="#">铁路产品</a>
-                                    <a class="dropdown-item" href="#">单片机设计开发</a>
+                                    <a class="dropdown-item" href="{{route('products')}}?page=p1">电力仪器</a>
+                                    <a class="dropdown-item" href="{{route('products')}}?page=p2">电动汽车转换器</a>
+                                    <a class="dropdown-item" href="{{route('products')}}?page=p3">足浴桶控制器</a>
+                                    <a class="dropdown-item" href="{{route('products')}}?page=p4">铁路产品</a>
+                                    <a class="dropdown-item" href="{{route('products')}}?page=p5">单片机设计开发</a>
                                 </div>
                             </div>
                         </li>

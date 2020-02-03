@@ -2,8 +2,6 @@
 @section('content')
     <div class="container" style="background-color: #f8f9fa">
         <div class="row">
-
-
             <div class="col-md-6" style="margin: 20px 0 15px 0">
                 <h3 style="font-weight: 700;margin-bottom: 20px">CONTACT US 联系我们</h3>
                 <p><img src="images/nickname.png" class="img-fluid"  style="height: 20px" alt=""> 公司：徐州菲斯特XXX</p>

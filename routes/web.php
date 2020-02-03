@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', 'StaticPagesController@home');
-Route::view('/contact', 'static.contact')->name('contact');
-Route::view('/company', 'static.company')->name('company');
-Route::view('/products', 'static.products')->name('products');
+Route::get('/', 'StaticPagesController@home')->name('home');
+Route::get('/company', 'StaticPagesController@company')->name('company');
+Route::get('/news', 'StaticPagesController@news')->name('news');
+Route::get('/products', 'StaticPagesController@products')->name('products');
+Route::get('/album', 'StaticPagesController@album')->name('album');
+Route::get('/download', 'StaticPagesController@download')->name('download');
+Route::get('/message', 'StaticPagesController@message')->name('message');
+Route::get('/contact', 'StaticPagesController@contact')->name('contact');
 
 
 

@@ -2,14 +2,14 @@
     <div class="container">
         <a class="navbar-brand" href="/" style="font-weight: bold">菲斯特</a>
 
-        {{--         Toggler s--}}
+        {{--Toggler s--}}
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        {{--        Toggler e--}}
+        {{--Toggler e--}}
 
-        {{--        Navbar s--}}
+        {{--Navbar s--}}
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item nav-linker">
@@ -17,7 +17,7 @@
                 </li>
 
                 <li class="nav-item nav-linker">
-                    <a class="nav-link " href="#"><span id="nav-linker">最新资讯</span></a>
+                    <a class="nav-link " href="{{route('news')}}"><span id="nav-linker">最新资讯</span></a>
                 </li>
 
                 <li class="nav-item nav-linker">
@@ -27,16 +27,16 @@
                             <span id="nav-linker">产品信息</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                            <a class="dropdown-item" href="#">电力仪器</a>
-                            <a class="dropdown-item" href="#">电动汽车转换器</a>
-                            <a class="dropdown-item" href="#">足浴桶控制器</a>
-                            <a class="dropdown-item" href="#">铁路产品</a>
-                            <a class="dropdown-item" href="#">单片机设计开发</a>
+                            <a class="dropdown-item" href="{{route('products')}}?page=p1">电力仪器</a>
+                            <a class="dropdown-item" href="{{route('products')}}?page=p2">电动汽车转换器</a>
+                            <a class="dropdown-item" href="{{route('products')}}?page=p3">足浴桶控制器</a>
+                            <a class="dropdown-item" href="{{route('products')}}?page=p4">铁路产品</a>
+                            <a class="dropdown-item" href="{{route('products')}}?page=p5">单片机设计开发</a>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item nav-linker">
-                    <a class="nav-link " href="#"><span id="nav-linker">公司相册</span></a>
+                    <a class="nav-link " href="{{route('album')}}"><span id="nav-linker">公司相册</span></a>
                 </li>
                 <li class="nav-item nav-linker">
                     <a class="nav-link " href="#"><span id="nav-linker">下载中心</span></a>
@@ -56,10 +56,9 @@
                     </a>
                 </li>
             </ul>
-
-
         </div>
         {{--        Navbar e--}}
     </div>
+
 </nav>
 

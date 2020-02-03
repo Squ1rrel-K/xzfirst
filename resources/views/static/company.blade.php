@@ -1,6 +1,8 @@
 @extends('static.default')
 @section('content')
+    <img src="{{URL::asset('images/subbg.jpg')}}" class="img-fluid">
     <div class="container">
+
         <div style="padding-top:50px; padding-bottom: 55px;border-bottom: 1px solid #e5e5e5 ">
 
             <p>徐州菲斯特电子科技有限公司成立于2018年1月29日，与徐州中星测控科贸有限公司以及徐州先立电气科技有限公司为兄弟公司，公司以品质第一服务先行为经营理念，专注于

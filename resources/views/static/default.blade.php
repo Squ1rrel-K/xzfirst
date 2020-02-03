@@ -9,6 +9,7 @@
 
 <div style="width: 100%;height: 100%">
     @include('static._header')
+    @include('static._sidebar')
         @yield('content')
     @include('static._footer')
 </div>
