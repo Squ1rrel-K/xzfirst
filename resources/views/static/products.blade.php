@@ -1,358 +1,63 @@
 @extends('static.default')
 @section('content')
-    <div class="container">
-        <div style="margin-top: 50px ">
-            <p style="font-size: 24px">产品1</p>
-        </div>
-        <div class="row" style="margin-bottom: 15px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
+    <img src="{{URL::asset('images/subbg.jpg')}}" class="img-fluid">
+    <div class="container" style="padding-top: 50px">
+        <div>
+            <h5><span class="h5-span">产品信息 / {{$name}}</span></h5>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
                 </div>
-
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
+                </div>
             </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
                 </div>
-
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
+                </div>
             </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
                 </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
                 </div>
-
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 15px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
                 </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
+                <div class="col-md-3">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <p>产品名称</p>
                 </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 15px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div style="margin-top: 50px ">
-            <p style="font-size: 24px">产品2</p>
-        </div>
-        <div class="row" style="margin-bottom: 15px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 15px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 15px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-        </div>
-
-        <div style="margin-top: 50px ">
-            <p style="font-size: 24px">产品3</p>
-        </div>
-        <div class="row" style="margin-bottom: 15px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 15px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="row" style="margin-bottom: 50px">
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
-            </div>
-            <div class="col-md-3" style="padding: 0 10px 0 10px">
-                <div style="background-color: #f9f9f9">
-                    <a href="#">
-                        <img src="images/fake.jpg" class="img-fluid img-responsive " alt="">
-
-                    </a><p class="text-center">产品介绍</p>
-                </div>
-
             </div>
         </div>
     </div>
-    @endsection
+@endsection

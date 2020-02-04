@@ -43,7 +43,7 @@ class StaticPagesController extends Controller
                 break;
 
         }
-        return view('products.default', ['name' => $name]);
+        return view('static.products', ['name' => $name]);
     }
 
     public function album()

@@ -39,10 +39,10 @@
                     <a class="nav-link " href="{{route('album')}}"><span id="nav-linker">公司相册</span></a>
                 </li>
                 <li class="nav-item nav-linker">
-                    <a class="nav-link " href="#"><span id="nav-linker">下载中心</span></a>
+                    <a class="nav-link " href="{{{route('download')}}}"><span id="nav-linker">下载中心</span></a>
                 </li>
                 <li class="nav-item nav-linker">
-                    <a class="nav-link " href="#"><span id="nav-linker">在线留言</span></a>
+                    <a class="nav-link " href="{{route('message')}}"><span id="nav-linker">在线留言</span></a>
                 </li>
                 <li class="nav-item nav-linker">
                     <a class="nav-link " href="{{route('contact')}}"><span id="nav-linker">联系我们</span></a>
@@ -57,7 +57,7 @@
                 </li>
             </ul>
         </div>
-        {{--        Navbar e--}}
+        {{--avbar e--}}
     </div>
 
 </nav>
