@@ -11402,3 +11402,8 @@ body {
   padding-bottom: 15px;
 }
 
+.articles-a {
+  color: #222;
+  visited: #999;
+}
+

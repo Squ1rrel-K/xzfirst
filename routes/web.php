@@ -13,7 +13,7 @@
 
 Route::get('/', 'StaticPagesController@home')->name('home');
 Route::get('/company', 'StaticPagesController@company')->name('company');
-Route::get('/news', 'StaticPagesController@news')->name('news');
+Route::resource('articles', 'ArticlesController');
 Route::get('/products', 'StaticPagesController@products')->name('products');
 Route::get('/album', 'StaticPagesController@album')->name('album');
 Route::get('/download', 'StaticPagesController@download')->name('download');

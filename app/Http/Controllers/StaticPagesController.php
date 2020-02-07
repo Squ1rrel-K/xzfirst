@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Article;
 use Illuminate\Http\Request;
 
 class StaticPagesController extends Controller
 {
     public function home()
     {
-        return view('static.home');
+        $results = Article::orderBy('created_at','desc')->take(5)->get();
+        return view('static.home',compact('results'));
     }
 
     public function news()

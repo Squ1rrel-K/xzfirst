@@ -17,7 +17,7 @@
                 </li>
 
                 <li class="nav-item nav-linker">
-                    <a class="nav-link " href="{{route('news')}}"><span id="nav-linker">最新资讯</span></a>
+                    <a class="nav-link " href="{{route('articles.index')}}"><span id="nav-linker">最新资讯</span></a>
                 </li>
 
                 <li class="nav-item nav-linker">
@@ -52,7 +52,7 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a href="{{route('admin.home')}}">
-                        <img src="images/nickname.png" class="image img-responsive" alt="" height="25px">
+                        <img src="{{URL::asset('images/nickname.png')}}" class="image img-responsive" alt="" height="25px">
                     </a>
                 </li>
             </ul>

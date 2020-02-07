@@ -1,5 +1,7 @@
 @extends('static.default')
 @section('content')
+    <img src="{{URL::asset('images/subbg.jpg')}}" class="img-fluid">
+
     <div class="container" style="background-color: #f8f9fa">
         <div class="row">
             <div class="col-md-6" style="margin: 20px 0 15px 0">

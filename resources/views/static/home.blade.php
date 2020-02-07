@@ -14,7 +14,7 @@
         {{--jum e--}}
 
         {{--Carousel s--}}
-        <div class="container" >
+        <div class="container">
             <h5><span class="h5-span">最新产品</span></h5>
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="padding-top: 15px">
                 <ol class="carousel-indicators">
@@ -57,14 +57,12 @@
                     <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
                 </div>
                 <div class="col-md-9">
-                    <a class="nav-link news-a" href="#"><p class="news-p">重大喜讯，恭喜xxx成为我的客户 重大喜讯，恭喜xxx成为我的客户</p></a>
-                    <a class="nav-link news-a" href="#"><p class="news-p">重大喜讯，恭喜xxx成为我的客户 重大喜讯，恭喜xxx成为我的客户</p></a>
-                    <a class="nav-link news-a" href="#"><p class="news-p">重大喜讯，恭喜xxx成为我的客户 重大喜讯，恭喜xxx成为我的客户</p></a>
-                    <a class="nav-link news-a" href="#"><p class="news-p">重大喜讯，恭喜xxx成为我的客户 重大喜讯，恭喜xxx成为我的客户</p></a>
-                    <a class="nav-link news-a" href="#"><p class="news-p">重大喜讯，恭喜xxx成为我的客户 重大喜讯，恭喜xxx成为我的客户</p></a>
-
+                    @foreach($results as $value)
+                        <a class="nav-link news-a" style="border-bottom: 1px solid #efefef"
+                           href="{{route('articles.show',$value->id)}}"><p class="news-p"><span
+                                    style="font-size: 12px">[{{$value->created_at}}]</span> {{$value->title}}</p></a>
+                    @endforeach
                 </div>
-
             </div>
         </div>
         {{--News e--}}

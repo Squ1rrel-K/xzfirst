@@ -11,7 +11,7 @@
                     <div class="form-group">
                         <label for="titleInput">留言标题</label>
                         <input type="text" class="form-control" id="titleInput" placeholder="必填">
-                        <small id="namelHelp" class="form-text text-muted">我们会保护您的信息隐私。</small>
+                        <small id="nameHelp" class="form-text text-muted">我们会保护您的信息隐私。</small>
                     </div>
                     <div class="form-group">
                         <label for="nameInput">您的姓名</label>
