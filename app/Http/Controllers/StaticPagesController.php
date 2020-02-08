@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Article;
+use App\Message;
 use Illuminate\Http\Request;
 
 class StaticPagesController extends Controller
@@ -23,31 +24,6 @@ class StaticPagesController extends Controller
         return view('static.company');
     }
 
-    public function products(Request $request)
-    {
-        $page = $request->input('page');
-
-        switch ($page) {
-            case 'p1':
-                $name = '电力仪器';
-                break;
-            case 'p2':
-                $name = '电动汽车转换器';
-                break;
-            case 'p3':
-                $name = '足浴桶控制器';
-                break;
-            case 'p4':
-                $name = '铁路产品';
-                break;
-            case 'p5':
-                $name = '单片机设计开发';
-                break;
-
-        }
-        return view('static.products', ['name' => $name]);
-    }
-
     public function album()
     {
         return view('static.album');
@@ -61,6 +37,17 @@ class StaticPagesController extends Controller
     public function message()
     {
         return view('static.message');
+    }
+
+    public function messages_upload(Request $request){
+        $message = new Message;
+        $message->title= $request->input('titleInput');
+        $message->name= $request->input('nameInput');
+        $message->email= $request->input('emailInput');
+        $message->address= $request->input('addressInput');
+        $message->content= $request->input('textInput');
+        $message->save();
+        return redirect('/message');
     }
 
     public function contact()

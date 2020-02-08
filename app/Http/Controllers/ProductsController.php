@@ -10,8 +10,12 @@ class ProductsController extends Controller
 {
     public function index(Request $request)
     {
-        $results = Product::where('category', $request->page)->orderBy('id', 'desc')->paginate(12);
-        return view('products.index', compact('results'));
+
+            $results = Product::where('category', $request->page)->orderBy('id', 'desc')->paginate(12);
+            return view('products.index', compact('results'));
+
+
+
     }
 
     public function show(Product $product)

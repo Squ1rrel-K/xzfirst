@@ -5,10 +5,9 @@
         <h5 style="padding-top: 50px;padding-bottom: 40px"><span class="h5-span">{{$results[0]->category}}</span></h5>
         <div class="row text-center">
             @foreach($results as $result)
-
-                    <div class="col-md-3">
+                <div class="col-md-3" style="padding-bottom: 20px">
                         <a href="{{route('products.show',$result->id)}}">
-                        <img src="{{$result->img_url}}" class="img-fluid">
+                        <img src="{{$result->img_url}}" class="img-fluid" alt="" style="height: 150px">
 
                         <span class="nav-link" style="color: black">{{$result->name}}</span>
                         </a>

@@ -18,6 +18,7 @@ Route::resource('products', 'ProductsController');
 Route::get('/album', 'StaticPagesController@album')->name('album');
 Route::get('/download', 'StaticPagesController@download')->name('download');
 Route::get('/message', 'StaticPagesController@message')->name('message');
+Route::post('/message','StaticPagesController@messages_upload')->name('messages_upload');
 Route::get('/contact', 'StaticPagesController@contact')->name('contact');
 
 
