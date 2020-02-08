@@ -2,20 +2,20 @@
 
 namespace App\Admin\Controllers;
 
-use App\Article;
+use App\Product;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
 
-class ArticlesController extends AdminController
+class ProductsController extends AdminController
 {
     /**
      * Title for current resource.
      *
      * @var string
      */
-    protected $title = 'App\Article';
+    protected $title = 'App\Product';
 
     /**
      * Make a grid builder.
@@ -24,10 +24,11 @@ class ArticlesController extends AdminController
      */
     protected function grid()
     {
+        $grid = new Grid(new Product());
 
-        $grid = new Grid(new Article());
         $grid->column('id', __('Id'));
-        $grid->column('title', __('Title'));
+        $grid->column('name', __('Name'));
+        $grid->column('category', __('Category'));
         $grid->column('content', __('Content'));
         $grid->column('img_url', __('Img url'));
         $grid->column('created_at', __('Created at'));
@@ -44,10 +45,11 @@ class ArticlesController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(Article::findOrFail($id));
+        $show = new Show(Product::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('title', __('Title'));
+        $show->field('name', __('Name'));
+        $show->field('category', __('Category'));
         $show->field('content', __('Content'));
         $show->field('img_url', __('Img url'));
         $show->field('created_at', __('Created at'));
@@ -63,8 +65,10 @@ class ArticlesController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new Article());
-        $form->text('title', __('Title'));
+        $form = new Form(new Product());
+
+        $form->text('name', __('Name'));
+        $form->text('category', __('Category'));
         $form->simplemde('content', __('Content'));
         $form->text('img_url', __('Img url'));
 

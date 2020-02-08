@@ -3,7 +3,7 @@
     <img src="{{URL::asset('images/subbg.jpg')}}" class="img-fluid">
     <div class="container">
 
-        <div style="padding-top:50px; padding-bottom: 55px;border-bottom: 1px solid #e5e5e5 ">
+        <div class="company-introduction">
 
             <p>徐州菲斯特电子科技有限公司成立于2018年1月29日，与徐州中星测控科贸有限公司以及徐州先立电气科技有限公司为兄弟公司，公司以品质第一服务先行为经营理念，专注于
                 新能源、电力仪器仪表以及物联网系列产品等研发生产。公司目前与中国矿大以及徐州工程学院的学者教授有着良好的合作关系，徐州菲斯特期待您的关注和加入！</p>

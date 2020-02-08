@@ -7,7 +7,7 @@
                 <h1 class="display-3" style="font-weight: bold">徐州菲斯特</h1>
                 <p class="lead">我们专注于新能源、电力仪器仪表以及物联网系列产品等研发生产</p>
                 <p class="lead">
-                    <a class="btn btn-primary" href="#">了解更多</a>
+                    <a class="btn btn-primary" href="company">了解更多</a>
                 </p>
             </div>
         </div>
@@ -54,14 +54,26 @@
             <h5><span class="h5-span">最新资讯</span></h5>
             <div class="row" style="padding: 15px 0 0 15px">
                 <div class="col-md-3">
-                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-9">
+                    {{--Articles row s--}}
                     @foreach($results as $value)
-                        <a class="nav-link news-a" style="border-bottom: 1px solid #efefef"
-                           href="{{route('articles.show',$value->id)}}"><p class="news-p"><span
-                                    style="font-size: 12px">[{{$value->created_at}}]</span> {{$value->title}}</p></a>
+                        <a class="nav-link articles-link home-link-border"
+                           href="{{route('articles.show',$value->id)}}">
+                            <p class="articles-paragraph">
+                                {{$value->title}}
+                                <span style="font-size: 12px;float: right">
+                                    {{// Cut time str, only remain to days
+                                     '['.substr($value->created_at,0,10).']'
+                                     }}
+                                </span>
+                            </p>
+
+
+                        </a>
                     @endforeach
+                    {{--Articles row e--}}
                 </div>
             </div>
         </div>
@@ -72,7 +84,7 @@
             <h5><span class="h5-span">下载中心</span></h5>
             <div class="row" style="padding: 15px 0 0 15px">
                 <div class="col-md-3">
-                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid">
+                    <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-9">
                     <a class="nav-link news-a" href="#"><p class="news-p">XXXX产品说明</p></a>

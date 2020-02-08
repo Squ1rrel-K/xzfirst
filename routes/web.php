@@ -14,7 +14,7 @@
 Route::get('/', 'StaticPagesController@home')->name('home');
 Route::get('/company', 'StaticPagesController@company')->name('company');
 Route::resource('articles', 'ArticlesController');
-Route::get('/products', 'StaticPagesController@products')->name('products');
+Route::resource('products', 'ProductsController');
 Route::get('/album', 'StaticPagesController@album')->name('album');
 Route::get('/download', 'StaticPagesController@download')->name('download');
 Route::get('/message', 'StaticPagesController@message')->name('message');

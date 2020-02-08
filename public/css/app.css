@@ -11368,17 +11368,29 @@ body {
   height: 100%;
 }
 
-.nav-linker {
+.h5-span {
+  border-bottom: 3px #b81c22 solid;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+
+.nav-link-span {
   margin-right: 20px;
 }
 
-#nav-linker {
+#nav-link-font {
   font-weight: 700;
 }
 
-.footer-nav-linker {
+.footer-nav-link-span {
   font-size: 14px;
   font-weight: 600;
+}
+
+.nav-sidebar {
+  right: 10px;
+  top: 50%;
+  z-index: 4;
 }
 
 .jumbotron-image {
@@ -11388,22 +11400,21 @@ body {
   background-size: 100% 100%;
 }
 
-.news-a {
+.home-link-border {
+  border-bottom: 1px solid #efefef;
+}
+
+.articles-link {
   color: black;
 }
 
-.news-p {
+.articles-paragraph {
   margin-bottom: 5px;
 }
 
-.h5-span {
-  border-bottom: 3px #b81c22 solid;
-  font-weight: bold;
-  padding-bottom: 15px;
-}
-
-.articles-a {
-  color: #222;
-  visited: #999;
+.company-introduction {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #e5e5e5;
 }
 

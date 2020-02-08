@@ -2,8 +2,11 @@
 <html lang="zh-CN">
 <head>
     <title>徐州菲斯特</title>
-    <link rel="stylesheet" href="css/app.css">
-    <script type="text/javascript" src="js/app.js"></script>
+    <link rel="stylesheet" href="{{URL::asset('css/app.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+
+    <script src="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js"></script>
+    <script type="text/javascript" src="{{URL::asset('js/app.js')}}"></script>
 </head>
 <body>
 

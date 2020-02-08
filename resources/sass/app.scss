@@ -1,4 +1,5 @@
 @import '~bootstrap/scss/bootstrap';
+
 // Default
 * {
     margin: 0;
@@ -11,20 +12,35 @@ html, body {
     height: 100%;
 }
 
+.h5-span {
+    border-bottom: 3px #b81c22 solid;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
 // Header
-.nav-linker {
+.nav-link-span {
     margin-right: 20px;
 }
 
-#nav-linker {
+#nav-link-font {
     font-weight: 700;
 
 }
+
 // Footer
-.footer-nav-linker {
+.footer-nav-link-span {
     font-size: 14px;
     font-weight: 600;
 }
+
+// Sidebar
+.nav-sidebar {
+    right: 10px;
+    top: 50%;
+    z-index: 4;
+}
+
 
 // Home
 .jumbotron-image {
@@ -34,25 +50,27 @@ html, body {
     background-size: 100% 100%;
 }
 
-.news-a {
+.home-link-border {
+    border-bottom: 1px solid #efefef;
+}
+
+// Articles
+.articles-link {
     color: black;
 
 }
-.news-p {
+
+.articles-paragraph {
     margin-bottom: 5px;
 }
 
 // Company
-.h5-span {
-    border-bottom: 3px #b81c22 solid;
-    font-weight: bold;
-    padding-bottom: 15px;
+.company-introduction {
+    padding-top: 50px;
+    padding-bottom: 55px;
+    border-bottom: 1px solid #e5e5e5;
 }
-// Articles
-.articles-a {
-    color: #222;
-    visited: #999;
-}
+
 
 
 
