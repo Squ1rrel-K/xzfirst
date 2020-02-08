@@ -4,19 +4,28 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use LaraMall\Markdown\Markdown;
 
 class ProductsController extends Controller
 {
     public function index(Request $request)
     {
-echo $request->page;
-        return $this->getViewsOfProducts($request->page);
+        $results = Product::where('category', $request->page)->orderBy('id', 'desc')->paginate(12);
+        return view('products.index', compact('results'));
+    }
+
+    public function show(Product $product)
+    {
+        $result = Product::find($product->id);
+        $markdown = new Markdown();
+        $result->content = $markdown->driver('extra')->html($markdown = $result->content);
+        return view('products.show',compact('result'));
+
     }
 
     public function getViewsOfProducts($category)
     {
-        $results = Product::where('category', $category)->orderBy('id', 'desc')->get();
-        return view('products.index', compact('results'));
+
 
     }
 }

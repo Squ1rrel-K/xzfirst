@@ -17,7 +17,7 @@ class CreateArticlesTable extends Migration
             $table->bigIncrements('id');
             $table->char('title','100');
             $table->text('content');
-            $table->char('img_url','100');
+            $table->char('img_url','100')->nullable();
             $table->index(['created_at']);
             $table->timestamps();
         });

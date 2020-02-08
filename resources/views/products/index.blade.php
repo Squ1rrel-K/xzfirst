@@ -1,10 +1,22 @@
-@extends('products.default')
+@extends('static.default')
 @section('content')
+    <img src="{{URL::asset('images/subbg.jpg')}}" class="img-fluid">
     <div class="container">
-        <div class="row">
+        <h5 style="padding-top: 50px;padding-bottom: 40px"><span class="h5-span">{{$results[0]->category}}</span></h5>
+        <div class="row text-center">
             @foreach($results as $result)
-                {{$result->name}}
-                @endforeach
+
+                    <div class="col-md-3">
+                        <a href="{{route('products.show',$result->id)}}">
+                        <img src="{{$result->img_url}}" class="img-fluid">
+
+                        <span class="nav-link" style="color: black">{{$result->name}}</span>
+                        </a>
+                    </div>
+            @endforeach
+                <div class="row" style="padding-top: 20px">
+                <div class="offset-md-5 col-md-4">{!! $results->render() !!}</div>
+        </div>
         </div>
     </div>
-    @endsection
+@endsection
