@@ -25,16 +25,16 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="{{URL::asset('images/item.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{'uploads/'.$images[0]->img_url}}" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{URL::asset('images/item.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{'uploads/'.$images[1]->img_url}}" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{URL::asset('images/item.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{'uploads/'.$images[2]->img_url}}" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="{{URL::asset('images/item.jpg')}}" class="d-block w-100" alt="...">
+                        <img src="{{'uploads/'.$images[3]->img_url}}" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -58,14 +58,14 @@
                 </div>
                 <div class="col-md-9">
                     {{--Articles row s--}}
-                    @foreach($results as $value)
+                    @foreach($articles as $article)
                         <a class="nav-link articles-link home-link-border"
-                           href="{{route('articles.show',$value->id)}}">
+                           href="{{route('articles.show',$article->id)}}">
                             <p class="articles-paragraph">
-                                {{$value->title}}
+                                {{$article->title}}
                                 <span style="font-size: 12px;float: right">
                                     {{// Cut time str, only remain to days
-                                     '['.substr($value->created_at,0,10).']'
+                                     '['.substr($article->created_at,0,10).']'
                                      }}
                                 </span>
                             </p>
@@ -87,13 +87,24 @@
                     <img src="{{URL::asset('images/fake.jpg')}}" class="img-fluid" alt="">
                 </div>
                 <div class="col-md-9">
-                    <a class="nav-link news-a" href="#"><p class="news-p">XXXX产品说明</p></a>
-                    <a class="nav-link news-a" href="#"><p class="news-p">XXXX产品说明</p></a>
-                    <a class="nav-link news-a" href="#"><p class="news-p">XXXX产品说明</p></a>
-                    <a class="nav-link news-a" href="#"><p class="news-p">XXXX产品说明</p></a>
-                    <a class="nav-link news-a" href="#"><p class="news-p">XXXX产品说明</p></a>
-                </div>
+                    {{--Articles row s--}}
+                    @foreach($downloads as $download)
+                        <a class="nav-link articles-link home-link-border"
+                           href="{{route('download',$download->id)}}">
+                            <p class="articles-paragraph">
+                                {{$download->title}}
+                                <span style="font-size: 12px;float: right">
+                                    {{// Cut time str, only remain to days
+                                     '['.substr($download->created_at,0,10).']'
+                                     }}
+                                </span>
+                            </p>
 
+
+                        </a>
+                    @endforeach
+                    {{--Articles row e--}}
+                </div>
             </div>
         </div>
         {{--Download s--}}

@@ -17,6 +17,7 @@ Route::group([
     $router->resource('messages', MessagesController::class);
     $router->resource('albums', AlbumController::class);
     $router->resource('downloads', DownloadController::class);
+    $router->resource('jums', JumController::class);
 
 
 });
