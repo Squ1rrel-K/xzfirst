@@ -15,5 +15,8 @@ Route::group([
     $router->resource('articles', ArticlesController::class);
     $router->resource('products', ProductsController::class);
     $router->resource('messages', MessagesController::class);
+    $router->resource('albums', AlbumController::class);
+    $router->resource('downloads', DownloadController::class);
+
 
 });

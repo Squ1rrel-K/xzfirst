@@ -11,9 +11,8 @@ class ProductsController extends Controller
     public function index(Request $request)
     {
 
-            $results = Product::where('category', $request->page)->orderBy('id', 'desc')->paginate(12);
-            return view('products.index', compact('results'));
-
+        $results = Product::where('category', $request->page)->orderBy('id', 'desc')->paginate(12);
+        return view('products.index', compact('results'));
 
 
     }
@@ -23,7 +22,7 @@ class ProductsController extends Controller
         $result = Product::find($product->id);
         $markdown = new Markdown();
         $result->content = $markdown->driver('extra')->html($markdown = $result->content);
-        return view('products.show',compact('result'));
+        return view('products.show', compact('result'));
 
     }
 
